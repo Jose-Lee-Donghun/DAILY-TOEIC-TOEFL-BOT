@@ -65,8 +65,9 @@ def format_messages(content):
         for j, w in enumerate(chunk, i + 1):
             synonyms = ", ".join(w['synonyms']) if w['synonyms'] else "—"
             antonyms = ", ".join(w['antonyms']) if w['antonyms'] else "—"
+            pronunciation_url = f"https://dictionary.cambridge.org/dictionary/english/{w['word']}"
             chunk_text += (
-                f"\n*{j}. {w['word']}* [{w['part_of_speech']}] `{w['category']}`\n"
+                f"\n*{j}. {w['word']}* [{w['part_of_speech']}] `{w['category']}` <{pronunciation_url}|🔊 발음>\n"
                 f"   🔹 뜻: {w['korean_meaning']}\n"
                 f"   🔹 Meaning: {w['english_meaning']}\n"
                 f"   🔹 예문: _{w['example']}_\n"
