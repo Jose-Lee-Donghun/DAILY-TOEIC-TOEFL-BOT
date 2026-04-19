@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Generate all 200 days of TOEIC/TOEFL study content using Claude API."""
+"""Generate all 200 days of TOEIC/TOEFL study content using Google Gemini API (free)."""
 
-import anthropic
+import google.generativeai as genai
 import json
 import os
 import sys
@@ -298,17 +298,12 @@ Return ONLY valid JSON. No markdown. No explanation. Just the JSON object matchi
 {JSON_SCHEMA}"""
 
 
-def generate_day(client: anthropic.Anthropic, day: int) -> dict:
+def generate_day(model: genai.GenerativeModel, day: int) -> dict:
     info = CURRICULUM[day]
     prompt = build_prompt(day, info)
 
-    response = client.messages.create(
-        model="claude-sonnet-4-6",
-        max_tokens=4096,
-        messages=[{"role": "user", "content": prompt}],
-    )
-
-    raw = response.content[0].text.strip()
+    response = model.generate_content(prompt)
+    raw = response.text.strip()
 
     # Strip markdown code fences if present
     if raw.startswith("```"):
@@ -321,12 +316,16 @@ def generate_day(client: anthropic.Anthropic, day: int) -> dict:
 
 
 def main() -> int:
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
-        print("ERROR: ANTHROPIC_API_KEY 환경변수가 없습니다.")
+        print("ERROR: GEMINI_API_KEY 환경변수가 없습니다.")
         return 1
 
-    client = anthropic.Anthropic(api_key=api_key)
+    genai.configure(api_key=api_key)
+    model = genai.GenerativeModel(
+        model_name="gemini-1.5-flash",
+        generation_config={"temperature": 0.7, "max_output_tokens": 4096},
+    )
     CONTENT_DIR.mkdir(exist_ok=True)
 
     start_day = int(os.environ.get("START_DAY", "2"))
@@ -351,7 +350,7 @@ def main() -> int:
 
         for attempt in range(3):
             try:
-                data = generate_day(client, day)
+                data = generate_day(model, day)
                 with open(output_path, "w", encoding="utf-8") as f:
                     json.dump(data, f, ensure_ascii=False, indent=2)
                 print("✓")

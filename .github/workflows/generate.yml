@@ -29,11 +29,11 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install anthropic
+        run: pip install google-generativeai
 
       - name: Generate content
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           START_DAY: ${{ inputs.start_day }}
           END_DAY: ${{ inputs.end_day }}
         run: python scripts/generate_content.py
