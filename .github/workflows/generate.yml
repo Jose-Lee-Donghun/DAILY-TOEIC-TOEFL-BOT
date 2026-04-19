@@ -1,0 +1,47 @@
+name: Generate Study Content
+
+on:
+  workflow_dispatch:
+    inputs:
+      start_day:
+        description: '시작 Day (기본값: 2)'
+        default: '2'
+        required: false
+      end_day:
+        description: '종료 Day (기본값: 200)'
+        default: '200'
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install anthropic
+
+      - name: Generate content
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          START_DAY: ${{ inputs.start_day }}
+          END_DAY: ${{ inputs.end_day }}
+        run: python scripts/generate_content.py
+
+      - name: Commit generated content
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content/
+          git diff --staged --quiet || git commit -m "Generate content: Day ${{ inputs.start_day }} ~ ${{ inputs.end_day }}"
+          git push
