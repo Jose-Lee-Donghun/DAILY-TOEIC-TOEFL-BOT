@@ -1,0 +1,346 @@
+{
+  "day": 1,
+  "phase": "TOEIC",
+  "passage": {
+    "title": "Memo: Monthly Team Meeting",
+    "text": "TO: All Staff\nFROM: Sarah Kim, Office Manager\nDATE: March 15\nSUBJECT: Monthly Team Meeting\n\nPlease be informed that the monthly team meeting will be held on Friday, March 20, at 2:00 P.M. in Conference Room B.\n\nThis month's agenda includes a review of the first quarter sales report, an update on the new product launch, and a discussion about office renovation plans.\n\nAll department heads are required to attend. Other staff members are encouraged to join if their schedules permit. Please bring your departmental reports.\n\nLight refreshments will be provided. If you have any agenda items to add, please contact me by Wednesday, March 18.",
+    "questions": [
+      {
+        "number": 1,
+        "question": "What is the purpose of this memo?",
+        "options": [
+          "A) To announce a change in office location",
+          "B) To inform staff about an upcoming meeting",
+          "C) To request first quarter sales data",
+          "D) To introduce a new office manager"
+        ]
+      },
+      {
+        "number": 2,
+        "question": "When will the meeting take place?",
+        "options": [
+          "A) March 15",
+          "B) March 18",
+          "C) March 20",
+          "D) March 22"
+        ]
+      },
+      {
+        "number": 3,
+        "question": "What are staff members asked to bring to the meeting?",
+        "options": [
+          "A) Refreshments",
+          "B) Meeting invitations",
+          "C) Departmental reports",
+          "D) Product samples"
+        ]
+      }
+    ]
+  },
+  "grammar": {
+    "title": "영어 문장의 기본 구조 — 주어(S) + 동사(V)",
+    "korean_explanation": "영어 문장은 반드시 *주어*와 *동사*가 있어야 해요.\n\n• 주어(Subject): 문장의 주인공 → '누가 / 무엇이'\n• 동사(Verb): 주어의 행동이나 상태 → '~한다 / ~이다'\n\n한국어: '나는 공부한다' → 주어: 나는 / 동사: 공부한다\n영어: 'I study.' → Subject: I / Verb: study\n\n⚠️ 중요! 영어는 주어를 절대 생략할 수 없어요!\n❌ 틀림: Studies every day. (주어 없음)\n✅ 맞음: She studies every day.",
+    "english_explanation": "Every English sentence MUST have a subject and a verb.\n\n• Subject: who or what the sentence is about\n• Verb: what the subject does or is\n\nThe most basic pattern is: Subject + Verb\nExample: 'She runs.' / 'He works.' / 'The meeting starts.'\n\n⚠️ Unlike Korean, you CANNOT drop the subject in English!\nAlways include the subject, even when it seems obvious.",
+    "examples": [
+      "The manager *works* in Seoul. (주어: The manager / 동사: works)",
+      "She *reads* every morning. (주어: She / 동사: reads)",
+      "The meeting *starts* at 9 A.M. (주어: The meeting / 동사: starts)"
+    ],
+    "quiz": [
+      {
+        "number": 1,
+        "question": "다음 중 올바른 영어 문장은?",
+        "options": [
+          "A) Works hard every day.",
+          "B) He works hard every day.",
+          "C) Hard every day works.",
+          "D) Every day he."
+        ],
+        "answer": "B",
+        "explanation": "영어 문장은 반드시 주어가 있어야 해요. 'He(주어) + works(동사)' 구조가 올바릅니다."
+      },
+      {
+        "number": 2,
+        "question": "'The report was submitted on time.' 에서 주어는?",
+        "options": [
+          "A) submitted",
+          "B) time",
+          "C) The report",
+          "D) on"
+        ],
+        "answer": "C",
+        "explanation": "'The report'가 문장의 주인공(주어)입니다. 'was submitted'는 동사입니다."
+      },
+      {
+        "number": 3,
+        "question": "영어 문장에서 반드시 필요한 두 가지 요소는?",
+        "options": [
+          "A) 형용사와 부사",
+          "B) 주어와 동사",
+          "C) 목적어와 보어",
+          "D) 전치사와 명사"
+        ],
+        "answer": "B",
+        "explanation": "영어 문장의 핵심은 주어(Subject)와 동사(Verb)입니다. 나머지는 선택 요소예요."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "word": "agenda",
+      "part_of_speech": "n.",
+      "korean_meaning": "의제, 안건",
+      "english_meaning": "a list of items to be discussed at a meeting",
+      "example": "The agenda for today's meeting includes a budget review.",
+      "synonyms": ["schedule", "program", "plan"],
+      "antonyms": [],
+      "category": "TOEIC"
+    },
+    {
+      "word": "submit",
+      "part_of_speech": "v.",
+      "korean_meaning": "제출하다",
+      "english_meaning": "to present something for consideration or review",
+      "example": "Please submit your report by Friday.",
+      "synonyms": ["hand in", "present", "turn in"],
+      "antonyms": ["withdraw", "withhold"],
+      "category": "TOEIC"
+    },
+    {
+      "word": "confirm",
+      "part_of_speech": "v.",
+      "korean_meaning": "확인하다, 확정하다",
+      "english_meaning": "to establish the truth or make something definite",
+      "example": "She confirmed her attendance at the conference.",
+      "synonyms": ["verify", "validate", "approve"],
+      "antonyms": ["deny", "cancel"],
+      "category": "TOEIC"
+    },
+    {
+      "word": "deadline",
+      "part_of_speech": "n.",
+      "korean_meaning": "마감일, 기한",
+      "english_meaning": "the latest time by which something must be completed",
+      "example": "The deadline for applications is next Monday.",
+      "synonyms": ["due date", "cutoff", "time limit"],
+      "antonyms": [],
+      "category": "TOEIC"
+    },
+    {
+      "word": "colleague",
+      "part_of_speech": "n.",
+      "korean_meaning": "동료",
+      "english_meaning": "a person you work with in the same organization",
+      "example": "My colleague helped me finish the project on time.",
+      "synonyms": ["coworker", "associate", "peer"],
+      "antonyms": ["rival", "competitor"],
+      "category": "TOEIC"
+    },
+    {
+      "word": "schedule",
+      "part_of_speech": "n./v.",
+      "korean_meaning": "일정 / 일정을 잡다",
+      "english_meaning": "a plan of activities or an arrangement of times",
+      "example": "Let's schedule a meeting for next week.",
+      "synonyms": ["timetable", "agenda", "plan"],
+      "antonyms": ["cancel", "postpone"],
+      "category": "TOEIC"
+    },
+    {
+      "word": "promote",
+      "part_of_speech": "v.",
+      "korean_meaning": "승진시키다, 홍보하다",
+      "english_meaning": "to raise someone to a higher position or to advertise",
+      "example": "She was promoted to senior manager after five years.",
+      "synonyms": ["advance", "elevate", "advertise"],
+      "antonyms": ["demote", "downgrade"],
+      "category": "TOEIC"
+    },
+    {
+      "word": "department",
+      "part_of_speech": "n.",
+      "korean_meaning": "부서, 학과",
+      "english_meaning": "a division of a large organization",
+      "example": "He works in the marketing department.",
+      "synonyms": ["division", "section", "unit"],
+      "antonyms": [],
+      "category": "TOEIC"
+    },
+    {
+      "word": "budget",
+      "part_of_speech": "n.",
+      "korean_meaning": "예산",
+      "english_meaning": "an estimate of income and planned expenditure",
+      "example": "The project exceeded its budget by 20%.",
+      "synonyms": ["funds", "allocation", "finances"],
+      "antonyms": [],
+      "category": "TOEIC"
+    },
+    {
+      "word": "require",
+      "part_of_speech": "v.",
+      "korean_meaning": "요구하다, 필요로 하다",
+      "english_meaning": "to need something as a necessity",
+      "example": "All staff are required to attend the safety training.",
+      "synonyms": ["need", "demand", "necessitate"],
+      "antonyms": ["provide", "offer", "supply"],
+      "category": "TOEIC"
+    },
+    {
+      "word": "analyze",
+      "part_of_speech": "v.",
+      "korean_meaning": "분석하다",
+      "english_meaning": "to examine something in detail to understand it",
+      "example": "Scientists carefully analyzed the experimental data.",
+      "synonyms": ["examine", "investigate", "study"],
+      "antonyms": ["overlook", "ignore"],
+      "category": "TOEFL"
+    },
+    {
+      "word": "hypothesis",
+      "part_of_speech": "n.",
+      "korean_meaning": "가설",
+      "english_meaning": "a proposed explanation that needs to be tested",
+      "example": "The researcher tested her hypothesis with a series of experiments.",
+      "synonyms": ["theory", "assumption", "proposition"],
+      "antonyms": ["fact", "certainty", "proof"],
+      "category": "TOEFL"
+    },
+    {
+      "word": "significant",
+      "part_of_speech": "adj.",
+      "korean_meaning": "중요한, 상당한",
+      "english_meaning": "important or large enough to have an effect",
+      "example": "The study found a significant improvement in test scores.",
+      "synonyms": ["important", "notable", "substantial"],
+      "antonyms": ["insignificant", "trivial", "minor"],
+      "category": "TOEFL"
+    },
+    {
+      "word": "evidence",
+      "part_of_speech": "n.",
+      "korean_meaning": "증거, 근거",
+      "english_meaning": "information that indicates whether something is true",
+      "example": "The evidence strongly supported the scientist's theory.",
+      "synonyms": ["proof", "data", "indication"],
+      "antonyms": ["disproof", "refutation"],
+      "category": "TOEFL"
+    },
+    {
+      "word": "theory",
+      "part_of_speech": "n.",
+      "korean_meaning": "이론",
+      "english_meaning": "a system of ideas used to explain something",
+      "example": "Darwin's theory of evolution changed the field of biology.",
+      "synonyms": ["hypothesis", "concept", "framework"],
+      "antonyms": ["fact", "practice", "reality"],
+      "category": "TOEFL"
+    },
+    {
+      "word": "conclude",
+      "part_of_speech": "v.",
+      "korean_meaning": "결론짓다, 끝내다",
+      "english_meaning": "to arrive at a judgment or decision after consideration",
+      "example": "The study concluded that regular exercise improves mental health.",
+      "synonyms": ["determine", "infer", "deduce"],
+      "antonyms": ["begin", "start", "introduce"],
+      "category": "TOEFL"
+    },
+    {
+      "word": "phenomenon",
+      "part_of_speech": "n.",
+      "korean_meaning": "현상",
+      "english_meaning": "a fact or event observed to exist or happen",
+      "example": "Climate change is a global phenomenon affecting all countries.",
+      "synonyms": ["occurrence", "event", "effect"],
+      "antonyms": [],
+      "category": "TOEFL"
+    },
+    {
+      "word": "research",
+      "part_of_speech": "n./v.",
+      "korean_meaning": "연구, 조사 / 연구하다",
+      "english_meaning": "systematic investigation to discover facts",
+      "example": "Her research focused on the effects of diet on brain function.",
+      "synonyms": ["investigation", "study", "inquiry"],
+      "antonyms": [],
+      "category": "TOEFL"
+    },
+    {
+      "word": "demonstrate",
+      "part_of_speech": "v.",
+      "korean_meaning": "입증하다, 시연하다",
+      "english_meaning": "to show clearly that something is true",
+      "example": "The experiment demonstrated the effects of temperature on growth.",
+      "synonyms": ["prove", "show", "illustrate"],
+      "antonyms": ["disprove", "conceal", "hide"],
+      "category": "TOEFL"
+    },
+    {
+      "word": "factor",
+      "part_of_speech": "n.",
+      "korean_meaning": "요인, 요소",
+      "english_meaning": "an element that contributes to a result",
+      "example": "Diet is an important factor in maintaining good health.",
+      "synonyms": ["element", "component", "variable"],
+      "antonyms": ["result", "outcome", "effect"],
+      "category": "TOEFL"
+    }
+  ],
+  "answers": {
+    "passage": [
+      {
+        "number": 1,
+        "answer": "B",
+        "explanation": "메모의 목적은 직원들에게 월간 팀 회의를 알리는 것입니다. 'Please be informed that the monthly team meeting will be held...'에서 확인할 수 있어요."
+      },
+      {
+        "number": 2,
+        "answer": "C",
+        "explanation": "회의는 3월 20일 금요일에 열립니다. 'the monthly team meeting will be held on Friday, March 20'에서 확인할 수 있어요."
+      },
+      {
+        "number": 3,
+        "answer": "C",
+        "explanation": "직원들은 부서 보고서를 가져오라고 요청받았습니다. 'Please bring your departmental reports'에서 확인할 수 있어요."
+      }
+    ],
+    "vocab_quiz": [
+      {
+        "number": 1,
+        "question": "회의의 주요 ___은 예산 검토입니다. 빈칸에 알맞은 단어는?",
+        "options": ["A) colleague", "B) agenda", "C) deadline", "D) budget"],
+        "answer": "B",
+        "explanation": "agenda = 의제, 안건. '회의 안건'은 'meeting agenda'라고 표현해요."
+      },
+      {
+        "number": 2,
+        "question": "She was ___ to senior manager after five years. 빈칸에 알맞은 단어는?",
+        "options": ["A) submitted", "B) required", "C) promoted", "D) confirmed"],
+        "answer": "C",
+        "explanation": "promote = 승진시키다. 'be promoted to + 직책'은 '~로 승진하다'를 의미해요."
+      },
+      {
+        "number": 3,
+        "question": "'분석하다'의 영어 단어는?",
+        "options": ["A) conclude", "B) demonstrate", "C) analyze", "D) research"],
+        "answer": "C",
+        "explanation": "analyze = 분석하다. 명사형은 'analysis(분석)'입니다."
+      },
+      {
+        "number": 4,
+        "question": "'significant'의 반의어는?",
+        "options": ["A) notable", "B) trivial", "C) substantial", "D) important"],
+        "answer": "B",
+        "explanation": "significant(중요한)의 반의어는 trivial(사소한, 하찮은)입니다."
+      },
+      {
+        "number": 5,
+        "question": "The ___ supported the scientist's theory. 빈칸에 알맞은 단어는?",
+        "options": ["A) hypothesis", "B) phenomenon", "C) evidence", "D) factor"],
+        "answer": "C",
+        "explanation": "evidence = 증거. '이론을 뒷받침하는 증거'는 'evidence supporting the theory'라고 표현해요."
+      }
+    ]
+  }
+}
