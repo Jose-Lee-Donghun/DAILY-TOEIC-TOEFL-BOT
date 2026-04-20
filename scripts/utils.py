@@ -1,7 +1,9 @@
 import json
 import os
 import requests
-from datetime import date
+from datetime import date, datetime, timezone, timedelta
+
+KST = timezone(timedelta(hours=9))
 
 
 def get_day_number():
@@ -9,7 +11,7 @@ def get_day_number():
     with open(config_path, 'r') as f:
         config = json.load(f)
     start_date = date.fromisoformat(config['start_date'])
-    today = date.today()
+    today = datetime.now(KST).date()
     day_number = (today - start_date).days + 1
     return day_number
 
